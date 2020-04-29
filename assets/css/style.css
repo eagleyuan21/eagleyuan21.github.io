@@ -30,11 +30,12 @@ a {
 .intro-section {
 	background-color:  #000000;
 	color: #fff;
-
 }
+
 .intro-section > a {
 	font-size: 45px;
 }
+
 
 .bio-section, .resume-head {
 	background-color: #f8f8f8;
