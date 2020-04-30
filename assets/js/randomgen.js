@@ -13,6 +13,24 @@ var imgs = ['IMG_0006.JPG', 'IMG_0032.JPG', 'IMG_0055.JPG', 'IMG_0072.JPG', 'IMG
 
 var path = "assets/files/slideshow/";
 
+var min = Math.floor(imgs.length / 3);
+var dif = imgs.length - 3 * min;
+var mark1 = 0;
+var mark2 = 0;
+if (dif == 0){
+	mark1 = min;
+	mark2 = mark1 + min;
+} else if (dif == 1){
+	mark1 = min + 1;
+	mark2 = mark1 + min;
+} else if (dif == 2){
+	mark1 = min + 1;
+	mark2 = mark1 + min + 1;
+} else{
+	mark1 = min;
+	mark2 = mark1 + min;
+}
+
 function getRandomImage(name) {
     var i;
     var img;
@@ -31,6 +49,8 @@ function getRandomImage(name) {
 }
 
 var rand = 0;
+var timerand = 0;
+
 function showSlides1() {
   var i;
   var slides = document.getElementsByClassName("left");
@@ -38,23 +58,23 @@ function showSlides1() {
   {
     slides[i].style.display = "none";  
   }
-  rand = Math.floor(Math.random()*imgs.length);  
-  console.log(rand)
-  slides[rand].style.display = "block";  
-  setTimeout(showSlides1, 2000); // Change image every 2 seconds
+  rand = Math.floor(Math.random()*mark1);  
+  slides[rand].style.display = "block";
+  timerand = Math.random() * 2300 + 2000;  
+  setTimeout(showSlides1, timerand);
 }
 
 function showSlides2() {
   var i;
   var slides = document.getElementsByClassName("mid");
-  for (i = 0; i < slides.length; i++) 
+  for (i = 0; i < slides.length; i++)
   {
     slides[i].style.display = "none";  
   }
-  rand = Math.floor(Math.random()*imgs.length);
-  console.log(rand)  
+  rand = Math.floor(Math.random()*(mark2 - mark1)) + mark1;
   slides[rand].style.display = "block";  
-  setTimeout(showSlides2, 2000); // Change image every 2 seconds
+  timerand = Math.random() * 2300 + 2000;
+  setTimeout(showSlides2, timerand);
 }
 
 function showSlides3() {
@@ -64,8 +84,8 @@ function showSlides3() {
   {
     slides[i].style.display = "none";  
   }
-  rand = Math.floor(Math.random()*imgs.length);
-  console.log(rand)  
+  rand = Math.floor(Math.random()*(imgs.length - mark2)) + mark2;
   slides[rand].style.display = "block";  
-  setTimeout(showSlides3, 2000); // Change image every 2 seconds
+  timerand = Math.random() * 2300 + 2000;
+  setTimeout(showSlides3, timerand);
 }
