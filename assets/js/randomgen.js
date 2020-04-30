@@ -8,8 +8,21 @@ var imgs = ['IMG_0006.JPG', 'IMG_0032.JPG', 'IMG_0055.JPG', 'IMG_0072.JPG', 'IMG
 'IMG_4142.jpg', 'IMG_4152.jpg', 'IMG_4155.JPG', 'IMG_4174.JPG', 'IMG_4181.jpg', 'IMG_4184.jpg', 'IMG_4185.jpg', 'IMG_4186.jpg', 
 'IMG_4187.jpg', 'IMG_4188.jpg', 'IMG_4245.JPG', 'IMG_4408.jpg', 'IMG_4442.jpg', 'IMG_4472.jpg', 'IMG_4527.JPG', 'IMG_4625.JPG', 
 'IMG_4649.jpg', 'IMG_4658.jpg', 'IMG_4795.jpg', 'IMG_4930.jpg', 'IMG_4979.JPG', 'IMG_5053.PNG', 'IMG_5054.JPG', 'IMG_5132.jpg', 
-'IMG_5137.jpg', 'IMG_5141.jpg', 'IMG_5261.JPG', 'IMG_5301.JPG', 'IMG_5305.JPG', 'IMG_5344.PNG', 'IMG_5347.JPG', 'IMG_5355.JPG', 
-'IMG_6846.JPG', 'IMG_8255.jpg'];
+'IMG_5137.jpg', 'IMG_5141.jpg', 'IMG_5261.JPG', 'IMG_5301.JPG', 'IMG_5305.JPG', 'IMG_5347.JPG', 'IMG_5355.JPG', 'IMG_6846.JPG', 'IMG_8255.jpg'];
+
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) 
+    {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
+}
+
+imgs = shuffle(imgs);
 
 var path = "assets/files/slideshow/";
 
@@ -39,7 +52,7 @@ function getRandomImage(name) {
     for (i = 0; i < imgs.length; i++)
     {
     	img = imgs[i];
-    	imgStr = '<div class="' + name + ' fade"><img src="' + path + img + '" width="100%"></img></div>';
+    	imgStr = '<div class="' + name + ' fade"><img src="' + path + img + '" width="100%" height="90%"></img></div>';
     	fullstring = fullstring.concat(imgStr);
     }
     

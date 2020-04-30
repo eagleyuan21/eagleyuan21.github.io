@@ -32,6 +32,8 @@
     
     <!-- Add icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="assets/js/randomgen.js"></script>
         
   </head>
   <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
@@ -84,16 +86,34 @@
     </nav>
     
     <!-- Intro Section -->
-    <section id="about me" class="intro-section" style="height: 75%">
+    <section id="about me" class="intro-section" style="height: 600px">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Eagle Yuan</h1>
-                  <h3>Computer Engineering and Computer Science student at <a href="https://www.northeastern.edu" style="color:Darkred ">Northeastern University</a></h3>
-                </div>
-            </div>
+                   <div class="row-one">
+  				   		<div class="column-one">
+    						<script type="text/javascript"> 
+								getRandomImage("left");
+							</script>
+  						</div>
+  						<div class="column-one">
+    						<script type="text/javascript"> 
+								getRandomImage("mid");
+							</script>
+  						</div>
+  						<div class="column-one">
+    						<script type="text/javascript"> 
+								getRandomImage("right");
+							</script>
+  						</div>
+					</div>
         </div>
-    </section>
+	</section>
+	
+	<script type="text/javascript">
+		showSlides1();
+		showSlides2();
+		showSlides3();
+	</script>
+
 
     <!-- Bio section -->
     <section id="bio" class="bio-section">
@@ -185,7 +205,6 @@
     <script type="text/javascript" src="assets/js/jquery.mobile.custom.min.js"></script>
     <!-- Timeline JS -->
     <script type="text/javascript" src="assets/js/timeline.js"></script>
-    <script type="text/javascript" src="assets/js/require.js"></script>
 
   </body>
 </html>
