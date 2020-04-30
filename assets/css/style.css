@@ -61,6 +61,15 @@ a {
   to {opacity: 1}
 }
 
+.row-one {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column-one {
+  flex: 33.33%;
+  padding: 5px;
+}
 /* Main Components 
 
 -------------------------------- */
