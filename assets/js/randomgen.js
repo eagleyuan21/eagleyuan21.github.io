@@ -71,7 +71,7 @@ function getRandomImage(name, num) {
     for (i = beg; i < end; i++)
     {
     	img = imgs[i];
-    	imgStr = '<div class="' + name + ' fade"><img src="' + path + img + '" width="100%" height="90%"></img></div>';
+    	imgStr = '<div class="' + name + ' fade"><img src="' + path + img + '" style="max-height:420px; max-width:100%;"></img></div>';
     	fullstring = fullstring.concat(imgStr);
     }
     
@@ -88,11 +88,11 @@ function showSlides1() {
   var slides = document.getElementsByClassName("left");
   for (i = 0; i < slides.length; i++) 
   {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   rand = Math.floor(Math.random()*slides.length);  
   slides[rand].style.display = "block";
-  timerand = Math.floor(Math.random() * 3000) + 1900;  
+  timerand = Math.floor(Math.random() * 3000) + 2500;  
   setTimeout(showSlides1, timerand);
 }
 
@@ -105,7 +105,7 @@ function showSlides2() {
   }
   rand = Math.floor(Math.random()*slides.length);
   slides[rand].style.display = "block";  
-  timerand = Math.floor(Math.random() * 3000) + 1900;
+  timerand = Math.floor(Math.random() * 3000) + 2500;
   setTimeout(showSlides2, timerand);
 }
 
@@ -114,10 +114,10 @@ function showSlides3() {
   var slides = document.getElementsByClassName("right");
   for (i = 0; i < slides.length; i++) 
   {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none"; 
   }
   rand = Math.floor(Math.random()*slides.length);
   slides[rand].style.display = "block";  
-  timerand = Math.floor(Math.random() * 3000) + 1900;
+  timerand = Math.floor(Math.random() * 3000) + 2500;
   setTimeout(showSlides3, timerand);
 }
