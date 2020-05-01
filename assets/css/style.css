@@ -6,14 +6,14 @@ body {
 }
 .navbar {
 
-	background-color: #C0C0C0;
+	background-color: #353A3F;
 	color: #fff;
 }
 
 .navbar-nav > li > a {
-  color: #000000;
+  color: #FFFFFF;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .navbar-header > a {
