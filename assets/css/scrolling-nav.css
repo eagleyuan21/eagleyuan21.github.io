@@ -27,10 +27,38 @@ html {
     }
 }
 
-.intro-section {
-    padding-top: 140px;
-    text-align: center;
-    background: #fff;
+@media (min-width: 768px) {
+  .intro-section {
+  padding-top: 150px;
+   text-align: center;
+   background: #fff;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro-section {
+  padding-top: 250px;
+   text-align: center;
+   background: #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro-section2 {
+  padding-top: 150px;
+   text-align: center;
+   background: #fff;
+   color: white;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro-section2 {
+  padding-top: 175px;
+   text-align: center;
+   background: #fff;
+   color: white;
+  }
 }
 
 .about-section {
