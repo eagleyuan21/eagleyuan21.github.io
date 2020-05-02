@@ -37,7 +37,7 @@ html {
 
 @media (max-width: 767px) {
   .intro-section {
-  padding-top: 250px;
+  padding-top: 180px;
    text-align: center;
    background: #fff;
   }

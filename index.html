@@ -40,65 +40,39 @@
   <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
   <body id="page-top" data-spy="scroll" data-target=".navbar fixed-top">
     <!-- Navigation -->
-    <nav class="navbar navbar-fixed-top" role="navigation">
-      <!-- container div -->
+    <nav class="navbar navbar-fixed-top">
       <div class="container-fluid">
-		<ul class="nav navbar-nav">
-		<li>
-          <a class="page-scroll" href="#page-top">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      	  <a class="navbar-brand page-scroll" href="#page-top">
           <img src="assets/files/eagle.jpg" alt="Logo" style="height:22px">
           </a>
-        </li>
-        <li>  
-          <a href="blog.html">
+          <a class="navbar-brand" href="blog.html">
           Blogs
           </a>
-        </li>  
-        <li>  
-          <a href="proj.html">
+          <a class="navbar-brand" href="proj.html">
           Projects
           </a>
-        </li>
-        </ul>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top">
-                        </a>
-                    </li>
-                    <li class="hidden">
-                        <a href="blog.html">
-                        Blogs
-                        </a>
-                    </li>
-                    <li class="hidden">
-                        <a href="proj.html">
-                        Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#bio">
-                        About Me
-                        </a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#exp">
-                        Experiences
-                        </a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#social">
-                        Social Media
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->    
-      </div>
-      <!--/ container -->
-    </nav>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+      		<a class="navbar-brand page-scroll" href="#bio">
+                About Me
+            </a>
+            <a class="navbar-brand page-scroll" href="#exp">
+                Experiences
+            </a>
+            <a class="navbar-brand page-scroll" href="#social">
+                Social Media
+            </a>
+      </ul>
+    </div>
+  </div>
+</nav>
     
     <!-- Intro Section -->
     <section id="about me" class="intro-section" style="height: 650px; background-image: url('assets/files/back.jpg');background-repeat: no-repeat;background-attachment: fixed; background-size: cover">
@@ -124,7 +98,6 @@
 	</section>
 	
 	<script type="text/javascript">
-		modifysize();
 		showSlides1();
 		showSlides2();
 		showSlides3();
