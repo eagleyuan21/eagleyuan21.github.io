@@ -54,6 +54,7 @@ function changebackground(){
 	var ter = val2.toString();
 	holder.style.height = ret + "px";
 	holder.style.paddingTop = ter + "px";
+	setTimeout(changebackground,100);
 }
 
 function getRandomImage(name, num) {
