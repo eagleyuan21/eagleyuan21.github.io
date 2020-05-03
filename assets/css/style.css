@@ -70,12 +70,20 @@ a {
   flex: 33.33%;
   padding: 5px;
 }
+
+/* Create three equal columns that sits next to each other */
+.column-two {
+  flex: 30%;
+  margin-left: 8%;
+}
+
+
 /* Main Components 
 
 -------------------------------- */
 .cd-horizontal-timeline {
   opacity: 0;
-  margin: 2em auto;
+  margin: 1em auto;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;

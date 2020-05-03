@@ -46,19 +46,6 @@ if (dif == 0){
 	mark2 = mark1 + min;
 }
 
-function modifysize(){
-	var w = window.innerWidth;
-	var holder = document.getElementById("bio");
-	console.log(holder);
-	if (w < 767)
-	{
-	
-	}
-	else{
-
-	}
-}
-
 function getRandomImage(name, num) {
     var i;
     var img;
