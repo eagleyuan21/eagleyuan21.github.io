@@ -54,7 +54,7 @@ function changebackground(){
 	var ter = val2.toString();
 	holder.style.height = ret + "px";
 	holder.style.paddingTop = ter + "px";
-	if(window.innerWidth > 1240){
+	if(window.innerWidth > 1000){
 		holder.style.backgroundSize = "cover";
 	}
 	else{
