@@ -27,21 +27,10 @@ html {
     }
 }
 
-@media (min-width: 768px) {
-  .intro-section {
+.intro-section {
   padding-top: 150px;
    text-align: center;
    background: #fff;
-  }
-}
-
-@media (max-width: 767px) {
-  .intro-section {
-  padding-top: 180px;
-  height: 500px;
-   text-align: center;
-   background: #fff;
-  }
 }
 
 @media (min-width: 768px) {
@@ -55,7 +44,7 @@ html {
 
 @media (max-width: 767px) {
   .intro-section2 {
-  padding-top: 175px;
+  padding-top: 155px;
    text-align: center;
    background: #fff;
    color: white;

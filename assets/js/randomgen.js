@@ -46,6 +46,18 @@ if (dif == 0){
 	mark2 = mark1 + min;
 }
 
+function changebackground(){
+	var holder = document.getElementById("about me");
+	var val1 = window.innerWidth/3 * 2 - 30;
+	var ret = val1.toString();
+	var val2 = window.innerWidth/10 + 20;
+	var ter = val2.toString();
+	console.log(ret);
+	holder.style.height = ret + "px";
+	holder.style.paddingTop = ter + "px";
+	setTimeout(changebackground, 500);
+}
+
 function getRandomImage(name, num) {
     var i;
     var img;
