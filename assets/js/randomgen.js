@@ -52,7 +52,6 @@ function changebackground(){
 	var ret = val1.toString();
 	var val2 = window.innerWidth/10 + 20;
 	var ter = val2.toString();
-	console.log(ret);
 	holder.style.height = ret + "px";
 	holder.style.paddingTop = ter + "px";
 	setTimeout(changebackground, 500);
