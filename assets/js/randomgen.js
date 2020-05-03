@@ -54,7 +54,13 @@ function changebackground(){
 	var ter = val2.toString();
 	holder.style.height = ret + "px";
 	holder.style.paddingTop = ter + "px";
-	setTimeout(changebackground,100);
+	if(window.innerWidth > 1240){
+		holder.style.backgroundSize = "cover";
+	}
+	else{
+		holder.style.backgroundSize = "contain";
+	}
+	setTimeout(changebackground,420);
 }
 
 function getRandomImage(name, num) {
