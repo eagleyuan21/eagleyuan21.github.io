@@ -252,7 +252,7 @@ a {
 }
 .cd-timeline-navigation a:hover {
   border: 2px solid #005695;
-  color: #005695;
+  color: black;
 }
 
 .cd-timeline-navigation a.prev::before {
