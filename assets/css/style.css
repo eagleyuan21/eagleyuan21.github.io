@@ -240,6 +240,7 @@ a {
   width: 34px;
   border-radius: 50%;
   border: 2px solid #dfdfdf;
+  color: #dfdfdf;
   /* replace text with an icon */
   overflow: hidden;
   color: transparent;
@@ -249,30 +250,49 @@ a {
   -moz-transition: border-color 0.3s;
   transition: border-color 0.3s;
 }
-.cd-timeline-navigation a::after {
-  /* arrow icon */
-  content: '';
-  position: absolute;
-  height: 16px;
-  width: 16px;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+.cd-timeline-navigation a:hover {
+  border: 2px solid #005695;
+  color: #005695;
 }
+
+.cd-timeline-navigation a.prev::before {
+  content:  "\f053";
+  font-family: FontAwesome;
+  color: #ccc;
+  font-size: 1.4rem;
+  display: block;
+  position:absolute;
+  top: 6px;
+  left: -21px;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.cd-timeline-navigation a.next::before {
+  content:  "\f054";
+  font-family: FontAwesome;
+  font-size: 1.4rem;
+  display: block;
+  position:absolute;
+  top: 6px;
+  left: -19px;
+  z-index: 10000;
+  color: #ccc;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.cd-timeline-navigation a:hover:before {
+  color: black;
+}
+
 .cd-timeline-navigation a.prev {
   left: 0;
-  -webkit-transform: translateY(-50%) rotate(180deg);
-  -moz-transform: translateY(-50%) rotate(180deg);
-  -ms-transform: translateY(-50%) rotate(180deg);
-  -o-transform: translateY(-50%) rotate(180deg);
-  transform: translateY(-50%) rotate(180deg);
 }
+
 .cd-timeline-navigation a.next {
   right: 0;
 }
