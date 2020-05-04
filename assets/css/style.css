@@ -195,7 +195,7 @@ a {
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  border: 2px solid black;
+  border: 2px solid #dfdfdf;
   background-color: #f8f8f8;
   -webkit-transition: background-color 0.3s, border-color 0.3s;
   -moz-transition: background-color 0.3s, border-color 0.3s;
@@ -215,6 +215,7 @@ a {
 .cd-horizontal-timeline .events a.older-event::after {
   border-color: black;
 }
+
 @media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline {
     margin: 6em auto;

@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
 			timelineComponents['eventsMinLapse'] = minLapse(timelineComponents['timelineDates']);
 			timelineComponents['timelineNavigation'] = timeline.find('.cd-timeline-navigation');
 			timelineComponents['eventsContent'] = timeline.children('.events-content');
-
+			
 			//assign a left postion to the single events along the timeline
 			setDatePosition(timelineComponents, eventsMinDistance);
 			//assign a width to the timeline
@@ -63,6 +63,8 @@ jQuery(document).ready(function($){
 					showNewContent(timelineComponents, timelineTotWidth, 'next');
 				}
 			});
+			
+			showNewContent(timelineComponents, timelineTotWidth,'next');
 		});
 	}
 
