@@ -289,6 +289,10 @@ a {
   color: black;
 }
 
+.cd-timeline-navigation a:after {
+  border-color: black;
+}
+
 .cd-timeline-navigation a.prev {
   left: 0;
 }
