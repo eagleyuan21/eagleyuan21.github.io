@@ -48,13 +48,13 @@ if (dif == 0){
 
 function changebackground(){
 	var holder = document.getElementById("about me");
-	var val1 = window.innerWidth/3 * 2 - 30;
+	var val1 = window.outerWidth/3 * 2 - 30;
 	var ret = val1.toString();
-	var val2 = window.innerWidth/10 + 20;
+	var val2 = window.outerWidth/10 + 20;
 	var ter = val2.toString();
 	holder.style.height = ret + "px";
 	holder.style.paddingTop = ter + "px";
-	if(window.innerWidth > 1000){
+	if(window.outerWidth > 1080){
 		holder.style.backgroundSize = "cover";
 	}
 	else{
