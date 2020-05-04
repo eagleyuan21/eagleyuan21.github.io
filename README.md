@@ -3,6 +3,8 @@ My personal website introducing myself, blogs, and my projects. It can be viewed
 
 Some features of my website include: A top fixed navigation bar that minimizes when not at the top of the page and scrolls to sections if the section is on the page, a random slideshow of 3 pictures being changed at random intervals, an about me section, a list of my technical skills, and a timeline feature that shows my experiences both education and work related. The website incorporates a wide variety of interactions between HTML, CSS, and JavaScript in order to achieve the features of this website, while still allowing for convenient access to the website for devices other than desktop. The latest version of bootstrap was downloaded to have basic CSS and JavaScript files to use for the website.
 
-As seen on the blog and projects pages, the blog and project are still in development and have not been deployed to the website.
+The blog implements a REST api application in Django that was built for the purpose of this blog only. That way, I can add blog posts on any device without having to modify html files. Subsequent JavaScript files are written to get the JSON data and display the data in the html file.
+
+As seen on the projects page, the project are still in development and have not been deployed to the website.
 
 In order to view this website locally, simply just download everything in this repository, and open "index.html" in the browser of your choice.
