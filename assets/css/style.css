@@ -1,6 +1,6 @@
 body {
   font-size: 1.8rem;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Georgia", serif;
   color: #383838;
   background-color: #f8f8f8;
 }
@@ -46,9 +46,9 @@ a {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.75s;
+  -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 5.5s;
+  animation-duration: 4s;
 }
 
 @-webkit-keyframes fade {
