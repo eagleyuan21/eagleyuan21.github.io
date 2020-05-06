@@ -33,7 +33,7 @@ if (dif == 0){
 
 function changebackground(){
 	var holder = document.getElementById("about me");
-	var val1 = window.outerWidth/3 * 2 - 30;
+	var val1 = window.outerWidth/3 * 2;
 	var ret = val1.toString();
 	var val2 = window.outerWidth/10 + 20;
 	var ter = val2.toString();
