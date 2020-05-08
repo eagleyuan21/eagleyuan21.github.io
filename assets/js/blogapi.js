@@ -18,17 +18,18 @@ function myFunction(arr) {
   var out = "";
   var i;
   var img;
-
+  var val1 = window.outerWidth/4 * 3;
+  var width = val1.toString();
   for(i = 0; i < arr.length; i++) {
   	if(arr[i].Image == null)
   	{
   		img = '';
   	}
   	else{
-  		img = '<h1 class="bio-head"><img src="' + arr[i].Image + '" style="max-height:350px;max-width:500px;height:auto;width:auto"></h1>';
+  		img = '<h1 class="bio-head"><img src="' + arr[i].Image + '" style="max-height:350px;max-width:500px;height:auto;width:' + width + 'px"></h1>';
   	}
   	newDate = format(arr[i].Date);
-    out += '<h1 class="bio-head" style="font-size:31px;font-weight:bold">' + arr[i].Title + '</h1><h2 class="bio-head" style="font-size:18px;text-align:left">' + newDate + '</h2>' + 
+    out += '<h1 style="font-size:31px;font-weight:bold">' + arr[i].Title + '</h1><h2 style="font-size:18px">' + newDate + '</h2>' + 
     img + '<p style="font-size:18px;text-align:left;white-space:pre-wrap">' + arr[i].Content + '</p><br><br><br><br><br><br><br>';
   }
   document.getElementById("id01").innerHTML = out;
