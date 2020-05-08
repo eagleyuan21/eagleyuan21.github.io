@@ -70,10 +70,11 @@ function getRandomImage(name, num) {
     	beg = mark2;
     	end = imgs.length;
     }
+    
     for (i = beg; i < end; i++)
     {
     	img = imgs[i];
-    	imgStr = '<div class="' + name + ' fade"><img src="' + path + img + '" style="max-height:420px; max-width:100%;"></img></div>';
+    	imgStr = '<div class="' + name + ' fade" style="display:none"><img src="' + path + img + '" style="max-height:420px; max-width:100%"></img></div>';
     	fullstring = fullstring.concat(imgStr);
     }
     
@@ -82,44 +83,48 @@ function getRandomImage(name, num) {
     document.close();
 }
 
-var rand = 0;
-var timerand = 0;
+var rand1 = 0;
+var rand2 = 0;
+var rand3 = 0;
+var timerand1 = 0;
+var timerand2 = 0;
+var timerand3 = 0;
 
 function showSlides1() {
   var i;
-  var slides = document.getElementsByClassName("left");
-  for (i = 0; i < slides.length; i++) 
+  var slides1 = document.getElementsByClassName("left");
+  for (i = 0; i < slides1.length; i++) 
   {
-    slides[i].style.display = "none";
+    slides1[i].style.display = "none";
   }
-  rand = Math.floor(Math.random()*slides.length);  
-  slides[rand].style.display = "block";
-  timerand = Math.floor(Math.random() * 3000) + 4000;
-  setTimeout(showSlides1, timerand);
+  rand1 = Math.floor(Math.random()*slides1.length);  
+  slides1[rand1].style.display = "block";
+  timerand1 = Math.floor(Math.random() * 3000) + 4000;
+  setTimeout(showSlides1, timerand1);
 }
 
 function showSlides2() {
-  var i;
-  var slides = document.getElementsByClassName("mid");
-  for (i = 0; i < slides.length; i++)
+  var j;
+  var slides2 = document.getElementsByClassName("mid");
+  for (j = 0; j < slides2.length; j++)
   {
-    slides[i].style.display = "none";  
+    slides2[j].style.display = "none";  
   }
-  rand = Math.floor(Math.random()*slides.length);
-  slides[rand].style.display = "block";  
-  timerand = Math.floor(Math.random() * 3000) + 4000;
-  setTimeout(showSlides2, timerand);
+  rand2 = Math.floor(Math.random()*slides2.length);
+  slides2[rand2].style.display = "block";  
+  timerand2 = Math.floor(Math.random() * 3000) + 4000;
+  setTimeout(showSlides2, timerand2);
 }
 
 function showSlides3() {
-  var i;
-  var slides = document.getElementsByClassName("right");
-  for (i = 0; i < slides.length; i++) 
+  var k;
+  var slides3 = document.getElementsByClassName("right");
+  for (k = 0; k < slides3.length; k++) 
   {
-    slides[i].style.display = "none"; 
+    slides3[k].style.display = "none"; 
   }
-  rand = Math.floor(Math.random()*slides.length);
-  slides[rand].style.display = "block";  
-  timerand = Math.floor(Math.random() * 3000) + 4000;
-  setTimeout(showSlides3, timerand);
+  rand3 = Math.floor(Math.random()*slides3.length);
+  slides3[rand3].style.display = "block";  
+  timerand3 = Math.floor(Math.random() * 3000) + 4000;
+  setTimeout(showSlides3, timerand3);
 }
