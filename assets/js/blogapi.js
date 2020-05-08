@@ -24,7 +24,7 @@ function myFunction(arr) {
   for(i = 0; i < arr.length; i++) {
   	if(i == (arr.length - 1))
   	{
-  		endbreak = '</p><br>';
+  		endbreak = '</p><br><br>';
   	}
   	else{
   		endbreak = '</p><br><br><br><br><br><br><br><br><br>';
@@ -39,8 +39,8 @@ function myFunction(arr) {
   		img = '<h1 style="text-align:center"><img src="' + arr[i].Image + '" style="max-height:350px;max-width:500px;height:auto;width:' + width + 'px"></h1>';
   	}
   	newDate = format(arr[i].Date);
-    out += '<h1 class="bio-head" style="font-size:31px;font-weight:bold;text-align:left">' + arr[i].Title + '</h1><h2 class="bio-head" style="font-size:18px;text-align:left">' + newDate + '</h2>' + 
-     '<p class="bio-head" style="font-size:18px;text-align:left;white-space:pre-wrap">' + arr[i].Content + endbreak;
+    out += '<h1 style="font-size:31px;font-weight:bold;text-align:left">' + arr[i].Title + '</h1><h2 style="font-size:18px;text-align:left">' + newDate + '</h2>' + 
+    img + '<p style="font-size:18px;text-align:left;white-space:pre-wrap">' + arr[i].Content + endbreak;
   }
   document.getElementById("id01").innerHTML = out;
 }
