@@ -42,7 +42,7 @@ function myFunction(arr) {
     out += '<h1 style="font-size:31px;font-weight:bold;text-align:left">' + arr[i].Title + '</h1><h2 style="font-size:18px;text-align:left">' + newDate + '</h2>' + 
     img + '<p style="font-size:18px;text-align:left;white-space:pre-wrap">' + arr[i].Content + endbreak;
   }
-  document.getElementById("id01").innerHTML = out;
+  document.getElementById("blogspostsdisplay").innerHTML = out;
 }
 
 function format(inputDate){ 
