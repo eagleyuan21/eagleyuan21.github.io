@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-MEDIA_ROOT = '/Users/eagleyuan/eclipse-workspace/personalsite/blogs_api/images'
+MEDIA_ROOT = 'INSERT_PATH_HERE/images'
 
 MEDIA_URL = '/images/'
 

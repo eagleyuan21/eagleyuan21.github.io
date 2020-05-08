@@ -18,7 +18,7 @@ function processRequest(e) {
         var response = JSON.parse(xhr.responseText);
         for(i = 0; i < response.length; i++)
         {
-        	console.log(response[i]);
+        	console.log(response[i].Title);
         }
     }
 }
