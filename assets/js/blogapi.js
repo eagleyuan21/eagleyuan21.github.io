@@ -9,13 +9,16 @@ function getObjects()
 	
 	xhr.onreadystatechange = processRequest;
 	
-	xhr.addEventListener("readystatechange", processRequest, false);
 }
 
 function processRequest(e) {
+    var i;
     if (xhr.readyState == 4 && xhr.status == 200) 
     {
         var response = JSON.parse(xhr.responseText);
-        console.log(response[0].photo_url);
+        for(i = 0; i < response.length; i++)
+        {
+        	console.log(response[i]);
+        }
     }
 }
