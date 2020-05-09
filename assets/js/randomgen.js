@@ -11,7 +11,7 @@ var imgs = ['IMG_4141.jpg', 'IMG_2935.jpg', 'IMG_8255.jpg', 'IMG_4106.JPG', 'IMG
 'IMG_2261.JPG', 'IMG_4795.jpg', 'IMG_2934.jpg', 'IMG_4155.JPG', 'IMG_4658.jpg', 'IMG_3444.JPG', 'IMG_3147.JPG', 'IMG_4930.jpg', 
 'IMG_3869.JPG'];
 
-
+var path = "assets/files/slideshow/";
 
 var min = Math.floor(imgs.length / 3);
 var dif = imgs.length - 3 * min;
