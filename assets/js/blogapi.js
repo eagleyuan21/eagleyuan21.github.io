@@ -21,6 +21,17 @@ function myFunction(arr) {
   var val1 = window.outerWidth/4 * 3;
   var width = val1.toString();
   var endbreak;
+  var ua = navigator.userAgent.toLowerCase(); 
+  if (ua.indexOf('safari') != -1) { 
+  	if (ua.indexOf('chrome') > -1) {
+    	//chrome
+  	} else {
+    	if(window.outerWidth <= 375)
+    	{
+    		document.getElementById("intro").style.backgroundAttachment = "scroll";
+    	}
+  	}
+  }
   for(i = 0; i < arr.length; i++) {
   	if(i == (arr.length - 1))
   	{
