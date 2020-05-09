@@ -99,7 +99,7 @@ function showSlides1() {
   }
   rand1 = Math.floor(Math.random()*slides1.length);  
   slides1[rand1].style.display = "block";
-  timerand1 = Math.floor(Math.random() * 3000) + 4000;
+  timerand1 = Math.floor(Math.random() * 3000) + 6000;
   setTimeout(showSlides1, timerand1);
 }
 
@@ -112,7 +112,7 @@ function showSlides2() {
   }
   rand2 = Math.floor(Math.random()*slides2.length);
   slides2[rand2].style.display = "block";  
-  timerand2 = Math.floor(Math.random() * 3000) + 4000;
+  timerand2 = Math.floor(Math.random() * 3000) + 6000;
   setTimeout(showSlides2, timerand2);
 }
 
@@ -125,6 +125,6 @@ function showSlides3() {
   }
   rand3 = Math.floor(Math.random()*slides3.length);
   slides3[rand3].style.display = "block";  
-  timerand3 = Math.floor(Math.random() * 3000) + 4000;
+  timerand3 = Math.floor(Math.random() * 3000) + 6000;
   setTimeout(showSlides3, timerand3);
 }
