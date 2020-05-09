@@ -1,17 +1,33 @@
 var url = "https://blogpostseha.herokuapp.com/?format=json";
 var xhr = new XMLHttpRequest();
 
+
 function getObjects()
 {
 	xhr.onreadystatechange = function() {
   		if (this.readyState == 4 && this.status == 200) {
     		var myArr = JSON.parse(this.responseText);
     		myFunction(myArr);
+    		
+    		var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+  				coll[i].addEventListener("click", function() {
+    				this.classList.toggle("active");
+    				var content = this.nextElementSibling;
+    				if (content.style.display === "block") {
+      					content.style.display = "none";
+    				} else {
+      					content.style.display = "block";
+    				}
+  				});
+			}
   		}
 	};
+	
 	xhr.open("GET", url, true);
 	xhr.send();
-	
 }
 
 function myFunction(arr) {
@@ -32,14 +48,9 @@ function myFunction(arr) {
     	}
   	}
   }
-  for(i = 0; i < arr.length; i++) {
-  	if(i == (arr.length - 1))
-  	{
-  		endbreak = '</p><br><br>';
-  	}
-  	else{
-  		endbreak = '</p><br><br><br><br><br><br><br><br><br>';
-  	}
+  for(i = arr.length - 1; i >= 0; i--) {
+  	
+  	endbreak = '</p></div><br>';
   	
   	if(arr[i].Image.length > 0)
   	{
@@ -49,7 +60,7 @@ function myFunction(arr) {
   		img = '';
   	}
   	newDate = format(arr[i].Date);
-    out += '<h1 style="font-size:31px;font-weight:bold;text-align:left">' + arr[i].Title + '</h1><h2 style="font-size:18px;text-align:left">' + newDate + '</h2>' + 
+    out += '<button type="button" class="collapsible"><h1 style="font-size:31px;font-weight:bold;text-align:left">' + arr[i].Title + '</h1><h2 style="font-size:18px;text-align:left">' + newDate + '</h2></button><div class="content">' + 
     img + '<p style="font-size:18px;text-align:left;white-space:pre-wrap">' + arr[i].Content + endbreak;
   }
   document.getElementById("blogspostsdisplay").innerHTML = out;
