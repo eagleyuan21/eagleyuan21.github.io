@@ -41,13 +41,12 @@ function myFunction(arr) {
   		endbreak = '</p><br><br><br><br><br><br><br><br><br>';
   	}
   	
-  	
-  	if(arr[i].Image == null)
+  	if(arr[i].Image.length > 0)
   	{
-  		img = '';
+  		img = '<h1 style="text-align:center"><img src="' + arr[i].Image + '" style="max-height:350px;max-width:500px;height:auto;width:' + width + 'px"></h1>';
   	}
   	else{
-  		img = '<h1 style="text-align:center"><img src="' + arr[i].Image + '" style="max-height:350px;max-width:500px;height:auto;width:' + width + 'px"></h1>';
+  		img = '';
   	}
   	newDate = format(arr[i].Date);
     out += '<h1 style="font-size:31px;font-weight:bold;text-align:left">' + arr[i].Title + '</h1><h2 style="font-size:18px;text-align:left">' + newDate + '</h2>' + 

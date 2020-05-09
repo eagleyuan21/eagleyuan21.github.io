@@ -27,10 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-MEDIA_ROOT = 'INSERT_PATH_HERE/images'
-
-MEDIA_URL = '/images/'
-
 
 # Application definition
 
