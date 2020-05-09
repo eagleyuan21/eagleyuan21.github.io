@@ -90,41 +90,38 @@ var timerand1 = 0;
 var timerand2 = 0;
 var timerand3 = 0;
 
-function showSlides1() {
-  var i;
+function showSlides1(val) {
+
   var slides1 = document.getElementsByClassName("left");
-  for (i = 0; i < slides1.length; i++) 
-  {
-    slides1[i].style.display = "none";
-  }
+  
+  slides1[val].style.display = "none";
+  
   rand1 = Math.floor(Math.random()*slides1.length);  
   slides1[rand1].style.display = "block";
   timerand1 = Math.floor(Math.random() * 3000) + 6000;
-  setTimeout(showSlides1, timerand1);
+  setTimeout(showSlides1.bind(null, rand1), timerand1);
 }
 
-function showSlides2() {
-  var j;
+function showSlides2(val) {
+
   var slides2 = document.getElementsByClassName("mid");
-  for (j = 0; j < slides2.length; j++)
-  {
-    slides2[j].style.display = "none";  
-  }
+
+  slides2[val].style.display = "none";  
+  
   rand2 = Math.floor(Math.random()*slides2.length);
   slides2[rand2].style.display = "block";  
   timerand2 = Math.floor(Math.random() * 3000) + 6000;
-  setTimeout(showSlides2, timerand2);
+  setTimeout(showSlides2.bind(null, rand2), timerand2);
 }
 
-function showSlides3() {
-  var k;
+function showSlides3(val) {
+
   var slides3 = document.getElementsByClassName("right");
-  for (k = 0; k < slides3.length; k++) 
-  {
-    slides3[k].style.display = "none"; 
-  }
+
+  slides3[val].style.display = "none"; 
+
   rand3 = Math.floor(Math.random()*slides3.length);
   slides3[rand3].style.display = "block";  
   timerand3 = Math.floor(Math.random() * 3000) + 6000;
-  setTimeout(showSlides3, timerand3);
+  setTimeout(showSlides3.bind(null, rand3), timerand3);
 }
