@@ -26,7 +26,7 @@ function myFunction(arr) {
   	if (ua.indexOf('chrome') > -1) {
     	//chrome
   	} else {
-    	if(window.outerWidth <= 375)
+    	if(window.outerWidth <= 415)
     	{
     		document.getElementById("intro").style.backgroundAttachment = "scroll";
     	}
