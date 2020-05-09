@@ -60,7 +60,7 @@ function myFunction(arr) {
   		img = '';
   	}
   	newDate = format(arr[i].Date);
-    out += '<button type="button" class="collapsible"><h1 style="font-size:31px;font-weight:bold;text-align:left">' + arr[i].Title + '</h1><h2 style="font-size:18px;text-align:left">' + newDate + '</h2></button><div class="content">' + 
+    out += '<button type="button" class="collapsible"><h1 style="font-size:31px;font-weight:500;text-align:left">' + arr[i].Title + '</h1><h2 style="font-size:18px;text-align:left">' + newDate + '</h2></button><div class="content">' + 
     img + '<p style="font-size:18px;text-align:left;white-space:pre-wrap">' + arr[i].Content + endbreak;
   }
   document.getElementById("blogspostsdisplay").innerHTML = out;

@@ -90,7 +90,13 @@ a {
 }
 
 .active {
-  background-color: #5EB0E5;
+  color: white;
+  background-color: #555;
+}
+
+.collapsible:hover {
+  color: white;
+  background-color: #aaa;
 }
 
 .content {
