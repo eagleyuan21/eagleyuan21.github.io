@@ -98,7 +98,7 @@ a {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.69s ease-out;
+  transition: max-height 0.4s ease-out;
   background-color: #f1f1f1;
 }
 
