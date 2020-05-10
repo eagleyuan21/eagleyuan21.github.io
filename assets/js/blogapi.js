@@ -30,28 +30,31 @@ function getObjects()
 	xhr.send();
 }
 
+function resizeBack()
+{
+  	var ua = navigator.userAgent.toLowerCase(); 
+  	if (ua.indexOf('safari') != -1) { 
+  		if (ua.indexOf('chrome') > -1) {
+    		//chrome
+  		} else {
+    		if(window.outerWidth <= 415)
+    		{
+    			document.getElementById("intro").style.backgroundAttachment = "scroll";
+    		}
+  		}
+  	}
+}
+
 function myFunction(arr) {
   var out = "";
   var i;
   var img;
   var val1 = window.outerWidth/4 * 3;
   var width = val1.toString();
-  var endbreak;
-  var ua = navigator.userAgent.toLowerCase(); 
-  if (ua.indexOf('safari') != -1) { 
-  	if (ua.indexOf('chrome') > -1) {
-    	//chrome
-  	} else {
-    	if(window.outerWidth <= 415)
-    	{
-    		document.getElementById("intro").style.backgroundAttachment = "scroll";
-    	}
-  	}
-  }
+  var endbreak = '</p></div><br>';
+  
   for(i = arr.length - 1; i >= 0; i--) {
-  	
-  	endbreak = '</p></div><br>';
-  	
+
   	if(arr[i].Image.length > 0)
   	{
   		img = '<h1 style="text-align:center"><img src="' + arr[i].Image + '" style="max-height:350px;max-width:500px;height:auto;width:' + width + 'px"></h1>';
