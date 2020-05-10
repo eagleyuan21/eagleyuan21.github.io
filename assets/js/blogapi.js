@@ -1,5 +1,4 @@
 var url = "https://blogpostseha.herokuapp.com/?format=json";
-const start = Date.now();
 var xhr = new XMLHttpRequest();
 
 
@@ -29,7 +28,6 @@ function getObjects()
 	
 	xhr.open("GET", url, true);
 	xhr.send();
-	console.log(Date.now()-start);
 }
 
 function myFunction(arr) {
