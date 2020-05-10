@@ -53,7 +53,7 @@ function myFunction(arr) {
   var width = val1.toString();
   var endbreak = '</p></div><br>';
   
-  for(i = arr.length - 1; i >= 0; i--) {
+  for(i = 0; i < arr.length; i++) {
 
   	if(arr[i].Image.length > 0)
   	{
