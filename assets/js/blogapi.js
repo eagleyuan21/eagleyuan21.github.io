@@ -53,7 +53,12 @@ function myFunction(arr) {
   var width = val1.toString();
   var endbreak = '</p></div><br>';
   
-  for(i = 0; i < arr.length; i++) {
+  idSort = function (a,b) {
+    return a.id - b.id;
+  };
+  arr.sort(idSort);
+  
+  for(i = arr.length - 1; i >= 0; i--) {
 
   	if(arr[i].Image.length > 0)
   	{

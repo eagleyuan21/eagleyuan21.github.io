@@ -6,6 +6,8 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 
 class blogView(APIView):
+    
+    
     def get(self, request):
         blog = blogpost.objects.all()
         serializer = blogSerializer(blog, many=True, context={"request": request})
