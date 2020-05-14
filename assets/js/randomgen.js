@@ -48,6 +48,9 @@ function changebackground(){
     		{
     			document.getElementById("about me").style.backgroundAttachment = "scroll";
     		}
+    		else{
+    			document.getElementById("about me").style.backgroundAttachment = "fixed";
+    		}
   		}
   	}
 	
