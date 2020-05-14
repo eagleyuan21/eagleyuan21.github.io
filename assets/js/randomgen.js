@@ -44,23 +44,24 @@ function changebackground(){
 	else if(window.outerWidth < 900 && window.outerHeight < 450)
 	{
 		holder.style.backgroundSize = "cover";
-		
-		var ua = navigator.userAgent.toLowerCase(); 
-		if (ua.indexOf('safari') != -1) { 
-  			if (ua.indexOf('chrome') > -1) {
-    			//chrome
-  			} else {
-    			if(window.outerHeight <= 415)
-    			{
-    				document.getElementById("about me").style.backgroundAttachment = "scroll";
-    			}
-  			}
-  		}
   		
 	}
 	else{
 		holder.style.backgroundSize = "contain";
 	}
+	
+	var ua = navigator.userAgent.toLowerCase(); 
+	if (ua.indexOf('safari') != -1) { 
+  		if (ua.indexOf('chrome') > -1) {
+    		//chrome
+  		} else {
+    		if(window.outerHeight <= 415)
+    		{
+    			document.getElementById("about me").style.backgroundAttachment = "scroll";
+    		}
+  		}
+  	}
+  	
 	setTimeout(changebackground,420);
 }
 
