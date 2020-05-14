@@ -46,7 +46,7 @@ function changebackground(){
   		} else {
     		if(window.outerHeight <= 450)
     		{
-    			document.getElementById("intro").style.backgroundAttachment = "scroll";
+    			document.getElementById("about me").style.backgroundAttachment = "scroll";
     		}
   		}
   	}
