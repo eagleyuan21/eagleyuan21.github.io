@@ -44,6 +44,12 @@ function changebackground(){
 	else{
 		holder.style.backgroundSize = "contain";
 	}
+	
+	if(window.outerHeight < 450)
+	{
+		document.getElementById("about me").style.backgroundAttachment = "scroll";
+	}
+	
 	setTimeout(changebackground,420);
 }
 
