@@ -38,30 +38,12 @@ function changebackground(){
 	var ter = val2.toString();
 	holder.style.height = ret + "px";
 	holder.style.paddingTop = ter + "px";
-	if(window.outerWidth > 1080){
+	if(window.outerWidth > 1080 || window.outerHeight < 450){
 		holder.style.backgroundSize = "cover";
-	}
-	else if(window.outerWidth < 900 && window.outerHeight < 450)
-	{
-		holder.style.backgroundSize = "cover";
-  		
 	}
 	else{
 		holder.style.backgroundSize = "contain";
 	}
-	
-	var ua = navigator.userAgent.toLowerCase(); 
-	if (ua.indexOf('safari') != -1) { 
-  		if (ua.indexOf('chrome') > -1) {
-    		//chrome
-  		} else {
-    		if(window.outerHeight <= 415)
-    		{
-    			document.getElementById("about me").style.backgroundAttachment = "scroll";
-    		}
-  		}
-  	}
-  	
 	setTimeout(changebackground,420);
 }
 
