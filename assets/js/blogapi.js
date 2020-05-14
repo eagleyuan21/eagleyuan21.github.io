@@ -39,7 +39,7 @@ function resizeBack()
   		} else {
     		if(window.outerWidth <= 415)
     		{
-    			document.getElementById("intro").style.backgroundAttachment = "scroll";
+    			//document.getElementById("intro").style.backgroundAttachment = "scroll";
     		}
   		}
   	}
