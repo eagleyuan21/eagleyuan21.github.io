@@ -41,6 +41,10 @@ function changebackground(){
 	if(window.outerWidth > 1080){
 		holder.style.backgroundSize = "cover";
 	}
+	else if(window.outerWidth < 900 && window.outerHeight < 450)
+	{
+		holder.style.backgroundSize = "cover";
+	}
 	else{
 		holder.style.backgroundSize = "contain";
 	}
