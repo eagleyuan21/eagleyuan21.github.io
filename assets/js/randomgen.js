@@ -44,7 +44,7 @@ function changebackground(){
   		if (ua.indexOf('chrome') > -1) {
     		//chrome
   		} else {
-    		if(window.outerHeight <= 450 || window.outerWidth >= 1366)
+    		if(window.outerHeight <= 450 || window.outerWidth > 1366)
     		{
     			holder.style.backgroundAttachment = "scroll";
     		}
