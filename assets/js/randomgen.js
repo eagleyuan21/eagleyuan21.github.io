@@ -54,7 +54,7 @@ function changebackground(){
   		}
   	}
 	
-	if(window.outerWidth >= 1024 || window.outerHeight < 450){
+	if(window.outerWidth > 1366 || window.outerHeight < 450){
 		holder.style.backgroundSize = "cover";
 	}
 	else{
