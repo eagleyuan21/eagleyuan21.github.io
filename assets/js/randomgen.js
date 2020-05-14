@@ -39,14 +39,10 @@ function changebackground(){
 	holder.style.height = ret + "px";
 	holder.style.paddingTop = ter + "px";
 	
-	var ua = navigator.userAgent.toLowerCase(); 
-  	if (ua.indexOf('safari') != -1) { 
-  		if (ua.indexOf('chrome') > -1) {
-    		//chrome
-  		} else {
-    		holder.style.backgroundAttachment = "scroll";
-  		}
-  	}
+	if(window.outerHeight < 450)
+	{
+		holder.style.backgroundAttachment = "scroll";
+	}
 	
 	if(window.outerWidth > 1080 || window.outerHeight < 450){
 		holder.style.backgroundSize = "cover";
