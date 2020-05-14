@@ -46,18 +46,29 @@ function changebackground(){
   		} else {
     		if(window.outerHeight <= 450 || window.outerWidth >= 1366)
     		{
-    			document.getElementById("about me").style.backgroundAttachment = "scroll";
+    			holder.style.backgroundAttachment = "scroll";
     		}
     		else{
-    			document.getElementById("about me").style.backgroundAttachment = "fixed";
+    			holder.style.backgroundAttachment = "fixed";
     		}
   		}
   	}
 	
-	if(window.outerWidth > 1366 || window.outerHeight < 450){
+	if(window.outerWidth > 1000 || window.outerHeight < 450){
 		holder.style.backgroundSize = "cover";
 	}
 	else{
+		holder.style.backgroundSize = "contain";
+	}
+	
+	var device = navigator.userAgent,
+	browser = {
+    	iPad: /iPad/.test(device),
+    	iPhone: /iPhone/.test(device),
+    	Android4: /Android 4/.test(device)
+	};
+	if(browser.iPad) 
+	{
 		holder.style.backgroundSize = "contain";
 	}
 	
