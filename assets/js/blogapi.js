@@ -62,7 +62,7 @@ function myFunction(arr) {
 
   	if(arr[i].Image.length > 0)
   	{
-  		img = '<h1 style="text-align:center"><img src="' + arr[i].Image + '" style="max-height:350px;max-width:500px;height:auto;width:' + width + 'px"></h1>';
+  		img = '<h1 style="text-align:center"><img src="' + arr[i].Image + '" style="max-height:500px;max-width:500px;height:auto;width:' + width + 'px"></h1>';
   	}
   	else{
   		img = '';
