@@ -46,9 +46,9 @@ a {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2.5s;
   animation-name: fade;
-  animation-duration: 4s;
+  animation-duration: 6.5s;
 }
 
 @-webkit-keyframes fade {
@@ -77,9 +77,32 @@ a {
   margin-left: 8%;
 }
 
+.collapsible {
+  background-color: #F8F8F8;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.active {
+  color: white;
+  background-color: #555;
+}
+
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  background-color: #f1f1f1;
+}
 
 /* Main Components 
-
 -------------------------------- */
 .cd-horizontal-timeline {
   opacity: 0;
