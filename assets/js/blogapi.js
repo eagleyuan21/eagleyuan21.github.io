@@ -1,9 +1,8 @@
-var url = "https://blogpostseha.herokuapp.com/?format=json";
-var xhr = new XMLHttpRequest();
-
+var url = "https://blogpostseha.herokuapp.com";
 
 function getObjects()
 {
+	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function() {
   		if (this.readyState == 4 && this.status == 200) {
     		var myArr = JSON.parse(this.responseText);
