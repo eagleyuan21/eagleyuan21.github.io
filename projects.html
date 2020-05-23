@@ -70,7 +70,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>My Projects</h1>
-                  <h4>I thought it would be cool to incorporate some personal projects I have been working on into my website, so I can be able to display some of my work, while also learning how to deploy projects I have worked on. More of my work can be found on my Github, which can be accessed at the bottom of this page.</h4>
+                  <h4>I thought it would be cool to incorporate some projects I have worked on into my website, so I can be able to display some of my work, while also learning how to deploy projects I have worked on. More of my work can be found on my Github, which can be accessed at the bottom of this page.</h4>
                 </div>
             </div>
         </div>
@@ -83,7 +83,29 @@
         <div class="row">
         <div class="col-lg-2"></div>
           <div class="col-lg-8">
-          <h1 class="bio-head" style="padding-bottom:40px">Coming soon!</h1>
+          <h1 class="bio-head">An Agent-Based modeling research and study of the foraging behavior of Black Soldier Fly Larvae</h1>
+          <h1 class="bio-head">
+          	<img src="assets/files/projects/combined.gif" style="max-width:100%;max-height:100%;width:auto;height:auto">
+          </h1>
+          <p style="font-size:18px;text-align:left">
+          	This research project was my first experience with computer science, and it was also a privilege to be able to work in my hometown at the world leading <a href="https://www.ornl.gov" style="color:#007833">Oak Ridge National Laboratory</a>. 
+          	Being surrounded by some of the most brilliant minds in the world and working with powerful and relevant research steered me towards studying computer science.
+          	<br><br>
+          	The focus of the project was to understand the foraging behavior of Black Soldier Fly Larvae (BSFL). 
+          	The reason why BSFL are of interest is because of their ability to feed on organic waste and in turn, these BSFL can be used as animal feed, which is an environmentally friendly recycling process. 
+          	The ability to understand feeding behavior could perhaps optimize feeding rates, which in turn helps maximize the rate of recyling. 
+          	Additional research has revealed that when BSFL eat collectivally, vortex movements form on the 2d plane. Therefore, the collective feeding movements of BSFL are reminiscent of other natural phenomena occurances, hence why an Agent-Based model was used, and the popular Agent-Based modeling software Netlogo was chosen to complete the model.
+          	In order to understand the collective eating behavior, the individual eating characteristics must first be examined. In this research, the models focus on a single larva scenario. 
+          	<br><br>
+          	Using experimental data, the model was created with a single larva in a petri dish with a food source near the edge of the petri dish. 
+          	Above is a side by side example with the experiment on the left and the model on the right.
+          	The reason for the location of the food source is because the single larva experimentation all had a food source near the edge, while no experiments conducted with the food source in the middle.
+          	Once the model was completed, there were several parameters that needed to be callibrated and optimized. Therefore, a genetic algorithm was used to calibrate and determine specific values for the parameters. In order to do so, a fitness function was defined. 
+          	In this situation, the fitness function compared the average percent time a larva spent near the wall, eating, and in the middle from experimental data to the percent time the larva spent in the same respective locations in the model. 
+          	The goal of the genetic algorithm was to find parameter sets that would minimize the fitness function.
+			Further information including documentation and code can be found in my GitHub in the <a href="https://github.com/eagleyuan21/BSFL-ABM" style="color:#cc7000">BSFL-ABM</a> repository.
+	      </p>
+	      <br>
           </div>
           <div class="col-lg-2"></div>
         </div>
