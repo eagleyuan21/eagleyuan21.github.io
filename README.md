@@ -5,6 +5,6 @@ Some features of my website include: A top fixed navigation bar that minimizes w
 
 The blog implements a REST api application in Django that was built for the purpose of this blog only. That way, I can add blog posts on any device without having to modify html files. Subsequent JavaScript files are written to get the JSON data and display the data in the html file. Additionally although anyone can see the json data that I generate, only adminstrative privledges can post blog JSON data, so nobody can post to the blogs excepts me. To view both the front end and back end logic of the taking the JSON data and displaying, see the blogapi JavaScript file under assets/js/blogapi.js. The blog page api is deployed on heroku at https://blogpostseha.herokuapp.com and is displayed at https://www.eagleyuan.com/blogs. The code for the blog can be found in the blog-api repo.
 
-As seen on the projects page, the project are still in development and have not been deployed to the website.
+As seen on the projects page, the projects give an insight to what I have worked on and am working on. If the project is deployable to a browser, it will be deployed to this page.
 
 In order to view this website locally, simply just download everything in this repository, and open "index.html" in the browser of your choice.
