@@ -25,7 +25,7 @@ var myGameArea = {
   		}
   		if(window.innerHeight > window.innerWidth)
 		{
-			dim = dim - 85000 / window.innerHeight;
+			dim = dim - 80000 / window.innerHeight;
 		}
 		if(dim > 450)
 		{
