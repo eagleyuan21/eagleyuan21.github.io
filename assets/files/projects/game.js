@@ -25,7 +25,7 @@ var myGameArea = {
   		}
   		if(window.innerHeight > window.innerWidth)
 		{
-			dim = dim - 80000 / window.innerHeight;
+			dim = dim - 75000 / window.innerHeight;
 		}
 		if(dim > 450)
 		{
@@ -38,7 +38,7 @@ var myGameArea = {
   		this.canvas.height = "600";
         this.canvas.style.opacity = "1";
     	this.context = this.canvas.getContext("2d");
-    	document.body.insertBefore(this.canvas, document.body.childNodes[10]);
+    	document.body.insertBefore(this.canvas, document.body.childNodes[12]);
     	this.interval = setInterval(updateGame, 20);
     	
     	content = new Array(4);
