@@ -17,16 +17,21 @@ var myGameArea = {
   		var dim;
   		if(window.innerWidth > window.innerHeight)
   		{
-  			dim = window.innerHeight - 100;
+  			dim = window.innerHeight;
   		}
   		else if(window.innerWidth <= window.innerHeight)
   		{
-  			dim = window.innerWidth - 100;
+  			dim = window.innerWidth;
   		}
+  		if(window.innerHeight > window.innerWidth)
+		{
+			dim = dim - 87000 / window.innerHeight;
+		}
 		if(dim > 420)
 		{
 			dim = 420;
 		}
+		
   		this.canvas.style.width  = dim.toString() + "px";
   		this.canvas.style.height = dim.toString() + "px";
   		this.canvas.width  = "600";
@@ -78,7 +83,7 @@ var myGameArea = {
 			});
 			var x = event.changedTouches[0].pageX;
   			var y = event.changedTouches[0].pageY;
-  			if(xi - x >= 20 && Math.abs(yi - y) <= 10)
+  			if(xi - x >= 35 && Math.abs(yi - y) <= 25)
   			{
   				shiftLeft();
        			if(compare(temp))
@@ -87,7 +92,7 @@ var myGameArea = {
        			}
        			updateGame();
   			}
-  			else if(x - xi >= 20 && Math.abs(yi - y) <= 10)
+  			else if(x - xi >= 35 && Math.abs(yi - y) <= 25)
   			{
   				shiftRight();
        			if(compare(temp))
@@ -96,7 +101,7 @@ var myGameArea = {
        			}
        			updateGame();
   			}
-  			else if(yi - y >= 20 && Math.abs(xi - x) <= 10)
+  			else if(yi - y >= 35 && Math.abs(xi - x) <= 25)
   			{
   				shiftUp();
        			if(compare(temp))
@@ -105,7 +110,7 @@ var myGameArea = {
        			}
        			updateGame();
   			}
-  			else if(y - yi >= 20 && Math.abs(xi - x) <= 10)
+  			else if(y - yi >= 35 && Math.abs(xi - x) <= 25)
   			{
   				shiftDown();
        			if(compare(temp))
