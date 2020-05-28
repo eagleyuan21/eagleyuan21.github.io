@@ -8,21 +8,6 @@ function startGame() {
 	myGameArea.start();
 }
 
-function disableScroll() { 
-    // Get the current page scroll position 
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, 
-  
-        // if any scroll is attempted, set this to the previous value 
-        window.onscroll = function() { 
-            window.scrollTo(scrollLeft, scrollTop); 
-        }; 
-} 
-  
-function enableScroll() { 
-    window.onscroll = function() {}; 
-} 
-
 var myGameArea = {
 	canvas : document.createElement("canvas"),
     start : function() {
@@ -83,7 +68,6 @@ var myGameArea = {
 		}
 		
 		this.canvas.addEventListener("touchstart", function(event) {
-			disableScroll();
     		xi = event.touches[0].clientX;
   			yi = event.touches[0].clientY;
 		}, false);
@@ -130,7 +114,6 @@ var myGameArea = {
        			}
        			updateGame();
   			}
-  			enableScroll();
 		}, false);
     	
     },
