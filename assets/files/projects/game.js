@@ -78,7 +78,7 @@ var myGameArea = {
 			});
 			var x = event.changedTouches[0].pageX;
   			var y = event.changedTouches[0].pageY;
-  			if(xi - x >= 30 && Math.abs(yi - y) <= 15)
+  			if(xi - x >= 25 && Math.abs(yi - y) <= 15)
   			{
   				shiftLeft();
        			if(compare(temp))
@@ -87,7 +87,7 @@ var myGameArea = {
        			}
        			updateGame();
   			}
-  			else if(x - xi >= 30 && Math.abs(yi - y) <= 15)
+  			else if(x - xi >= 25 && Math.abs(yi - y) <= 15)
   			{
   				shiftRight();
        			if(compare(temp))
@@ -96,7 +96,7 @@ var myGameArea = {
        			}
        			updateGame();
   			}
-  			else if(yi - y >= 30 && Math.abs(xi - x) <= 15)
+  			else if(yi - y >= 25 && Math.abs(xi - x) <= 15)
   			{
   				shiftUp();
        			if(compare(temp))
@@ -105,7 +105,7 @@ var myGameArea = {
        			}
        			updateGame();
   			}
-  			else if(y - yi >= 30 && Math.abs(xi - x) <= 15)
+  			else if(y - yi >= 25 && Math.abs(xi - x) <= 15)
   			{
   				shiftDown();
        			if(compare(temp))
@@ -536,28 +536,28 @@ function checkKey(e) {
 	});
     e = e || window.event;
 
-    if (e.keyCode == '87') {
+    if (e.keyCode == '38' || e.keyCode == '87') {
     	shiftUp();
        	if(compare(temp))
     	{
         	genNew();
        	}
     }
-    else if (e.keyCode == '83') {
+    else if (e.keyCode == '40' || e.keyCode == '83') {
 		shiftDown();
        	if(compare(temp))
     	{
         	genNew();
        	}
     }
-    else if (e.keyCode == '65') {
+    else if (e.keyCode == '37' || e.keyCode == '65') {
        	shiftLeft();
        	if(compare(temp))
     	{
         	genNew();
        	}
     }
-    else if (e.keyCode == '68') {
+    else if (e.keyCode == '39' || e.keyCode == '68') {
        	shiftRight();
        	if(compare(temp))
     	{
