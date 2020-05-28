@@ -72,13 +72,13 @@
   </div>
 </nav>
 
-<br><br>
+<br>
 <section id="intro" class="bio-section; serif">
       <div class="container">
           <h1 class="bio-head" style="font-size:33px">2048</h1>
           <p style="font-size:14px">
-          	If you are on mobile, simply swipe, or if you are on keyboard, use the arrow keys or the WASD keys.
-          	Blocks past 16384 are plain white because I doubt anyone can get higher than that (prove me wrong, send me a screenshot, and I will add more colors).
+          	If you are on mobile, simply swipe, or if you are on keyboard, use the arrow or WASD keys.
+          	Blocks past 16384 are white because I doubt anyone can get higher than that (prove me wrong, send me a screenshot, and I will add more colors).
           </p>
       </div>
 </section>
@@ -88,7 +88,7 @@
       <h1 id="scores" style="font-size:26px">Score: 0</h1>
 		<button onmousedown="startGame()" type="button" style="padding: 6px 14px; font-size: 14px;">Reset Game</button>
 		<script>
-			startGame()
+			startGame();
 			updateGame();
 		</script>
     </section>

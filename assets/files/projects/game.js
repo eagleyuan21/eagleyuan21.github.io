@@ -17,11 +17,11 @@ var myGameArea = {
   		var dim;
   		if(window.innerWidth > window.innerHeight)
   		{
-  			dim = window.innerHeight - 50;
+  			dim = window.innerHeight - 100;
   		}
   		else if(window.innerWidth <= window.innerHeight)
   		{
-  			dim = window.innerWidth - 50;
+  			dim = window.innerWidth - 100;
   		}
 		if(dim > 420)
 		{
