@@ -78,7 +78,7 @@ var myGameArea = {
 			});
 			var x = event.changedTouches[0].pageX;
   			var y = event.changedTouches[0].pageY;
-  			if(xi - x >= 25 && Math.abs(yi - y) <= 15)
+  			if(xi - x >= 20 && Math.abs(yi - y) <= 10)
   			{
   				shiftLeft();
        			if(compare(temp))
@@ -87,7 +87,7 @@ var myGameArea = {
        			}
        			updateGame();
   			}
-  			else if(x - xi >= 25 && Math.abs(yi - y) <= 15)
+  			else if(x - xi >= 20 && Math.abs(yi - y) <= 10)
   			{
   				shiftRight();
        			if(compare(temp))
@@ -96,7 +96,7 @@ var myGameArea = {
        			}
        			updateGame();
   			}
-  			else if(yi - y >= 25 && Math.abs(xi - x) <= 15)
+  			else if(yi - y >= 20 && Math.abs(xi - x) <= 10)
   			{
   				shiftUp();
        			if(compare(temp))
@@ -105,7 +105,7 @@ var myGameArea = {
        			}
        			updateGame();
   			}
-  			else if(y - yi >= 25 && Math.abs(xi - x) <= 15)
+  			else if(y - yi >= 20 && Math.abs(xi - x) <= 10)
   			{
   				shiftDown();
        			if(compare(temp))
