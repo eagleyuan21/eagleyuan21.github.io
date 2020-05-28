@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Projects</title>
+    <link rel="icon" href="assets/files/eagle.jpg">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Keywords used in the website -->
+    <meta name="keywords" content="Blogs">
+    
+    <!-- Description for Website -->
+    <meta name="description" content="Eagle Yuan, Northeastern">
+    
+    <!-- Bootstrap.css -->
+    <link type="text/css" rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- Scrolling Navbar -->
+    <link type="text/css" rel="stylesheet" href="assets/css/scrolling-nav.css">
+
+    <!-- Custom styling -->
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+  
+    <!-- Reset.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
+
+    <!-- Modernizer.js -->
+    <script type="text/javascript" src="assets/js/modernizr.js"></script>
+    
+    <!-- Add icon library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+	<script src="assets/js/blogapi.js"></script>
+	<script src="assets/files/projects/game.js"></script>
+		<style>
+			canvas {
+    			border: 1px solid #d3d3d3;
+    			background-color: #f1f1f1;
+			}
+		</style>
+  </head>
+  <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+  <body id="page-top" data-spy="scroll" data-target=".navbar fixed-top" style="text-align:center">
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      	  <a class="navbar-brand" href="https://www.eagleyuan.com">
+          Home
+          </a>
+          <a class="navbar-brand" href="blogs">
+          Blogs
+          </a>
+          <a class="navbar-brand page-scroll" href="projects">
+          Projects
+          </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+            <a class="navbar-brand page-scroll" href="#social">
+                Social Media
+            </a>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br><br>
+<section id="intro" class="bio-section; serif">
+      <div class="container">
+          <h1 class="bio-head" style="font-size:33px">2048</h1>
+          <p style="font-size:14px">
+          	If you are on mobile, simply swipe, or if you are on keyboard, use the WASD.
+          	Blocks past 16384 are plain white because I doubt anyone can get higher than that (prove me wrong, send me a screenshot, and I will add more colors).
+          </p>
+      </div>
+</section>
+    
+    <!-- Bio section -->
+    <section id="game" class="bio-section;serif">
+      <h1 id="scores" style="font-size:26px">Score: 0</h1>
+		<button onmousedown="startGame()" type="button" style="padding: 6px 14px; font-size: 14px;">Reset Game</button>
+		<script>
+			startGame()
+			updateGame();
+		</script>
+    </section>
+    <br>
+    <!--/ Bio Section -->
+    
+    <!-- Contact Section -->
+    <section id="social" class="contact-section">
+      <div class="container">
+        <h1 class="contact-head">Social Media</h1>
+        <a style="padding-right:7px;color:black;font-size:40px" href="https://www.linkedin.com/in/eagle-yuan-29b953196/"><i class="fa fa-linkedin-square"></i></a>
+        <a style="padding-left:7px;padding-right:7px;color:black;font-size:40px" href="https://www.github.com/eagleyuan21/"><i class="fa fa-github"></i></a>
+        <a style="padding-left:7px;padding-right:7px;color:black;font-size:40px" href="https://www.instagram.com/eagleyuan23/"><i class="fa fa-instagram"></i></a>
+        <a style="padding-left:7px;padding-right:7px;color:black;font-size:40px" href="mailto:eagleyuan21@gmail.com"><i class="fa fa-google"></i></a>
+        <a style="padding-left:7px;color:black;font-size:40px" href="mailto:yuan.e@northeastern.edu"><i class="fa fa-envelope"></i></a>      	
+      </div> 
+    </section>
+    <!--/. Contact Section -->
+      
+    <!-- Jquery -->
+    <script type="text/javascript" src="assets/js/jquery-2.1.4.js"></script>
+    
+    <!-- Bootstrap core js -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    
+    <!--Scrolling Nav Javascript -->
+    <script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/js/scrolling-nav.js"></script>
+
+    <!-- Modernizer.js -->
+    <script type="text/javascript" src="assets/js/modernizr.js"></script>
+    <!-- mobile jquery -->
+    <script type="text/javascript" src="assets/js/jquery.mobile.custom.min.js"></script>
+    <!-- Timeline JS -->
+    <script type="text/javascript" src="assets/js/timeline.js"></script>
+
+  </body>
+</html>
