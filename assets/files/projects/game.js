@@ -60,7 +60,7 @@ var myGameArea = {
 			
 			var distrib = Math.random();
 			var value = 0;
-			if(distrib < 0.8)
+			if(distrib < 0.9)
 			{
 				value = 2;
 			}
@@ -587,7 +587,7 @@ function genNew()
 			
 	var distrib = Math.random();
 	var value = 0;
-	if(distrib < 0.8)
+	if(distrib < 0.9)
 	{
 		value = 2;
 	}
