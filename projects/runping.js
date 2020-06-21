@@ -60,7 +60,7 @@ function pinger() {
         }
 	}, 	
 	{
-    greetings: 'Connection to https://www.eagleyuan.com [[;green;]success]\n'+ 'Login time: ' + new Date() + '\n----------------------------\nThe program pings every second\nIf the response time is over 1.5 s, the ping times out\nStart by typing ping and an address as the argument \nStop the pinging by hitting CTRL and C at the same time\n----------------------------',
+    greetings: 'Connection to https://www.eagleyuan.com [[;green;]success]\n'+ 'Login time: ' + new Date() + '\n----------------------------\nThe program pings every second\nIf the response time is over 1.5 s, the ping times out\nStart by typing ping and an address as the argument \nStop the pinging with CTRL and C\n----------------------------',
     width: 600,
     height: 350,
 	prompt: "[[;white;]eagleyuan.com:projects visitor$ ]",
