@@ -80,7 +80,7 @@ function pinger() {
             	term.echo("--- " + loc + " ping statistics ---");
             	var ploss = (total - suc) * 100.0 / total;
             	var round = ploss.toFixed(1);
-            	term.echo(total + " pings transmitted, " + suc + " successful pings, " + round + "% loss");
+            	term.echo(total + " pings transmitted, " + suc + " successful pings, " + round + "% ping loss");
             	
             	var min = Math.min(...times);
             	var max = Math.max(...times);
@@ -92,7 +92,7 @@ function pinger() {
 				});
 				var sqrAvg = sqrs.reduce((a,b) => a + b, 0) / sqrs.length;
             	var std = (Math.sqrt(sqrAvg)).toFixed(1);
-            	term.echo("Time data: min/max/avg/stddev = " + min + "/" + max + "/" + avg + "/" + std);
+            	term.echo("Time data: min/max/avg/stddev = " + min + "/" + max + "/" + avg + "/" + std + " ms");
             	
             	term.set_prompt("[[;white;]eagleyuan.com:projects visitor$ ]");
             }
