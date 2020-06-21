@@ -60,13 +60,13 @@ function pinger() {
         }
 	}, 	
 	{
-    greetings: 'Connection to https://www.eagleyuan.com [[;green;]success]\n'+ 'Login time: ' + new Date() + '\n----------------------------\nThe program pings every second\nIf the response time is over 1.5 s, the ping times out\n----------------------------\nStart by typing ping and an address as the argument \nStop the pinging with either \na) Hitting CTRL and C on keyboard \nb) Shaking the mobile device\n----------------------------',
+    greetings: 'Connection to https://www.eagleyuan.com [[;green;]success]\n'+ 'Login time: ' + new Date() + '\n----------------------------\nThe program pings every second\nIf the response time is over 1.5 s, the ping times out\n----------------------------\nStart by typing ping and an address as the argument \nStop the pinging with CTRL+C (Shift+C on mobile)\n----------------------------',
     width: 600,
     height: 350,
 	prompt: "[[;white;]eagleyuan.com:projects visitor$ ]",
 	keydown: function(e, term) {
         if (pinging) {
-            if (e.which == 67 && e.ctrlKey) { // CTRL+c
+            if (e.which == 67 && (e.ctrlKey || e.shiftKey)) { // CTRL+c
             	term.echo("^C");
             	clearTimeout(timer);
             	pinging = false;
