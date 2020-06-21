@@ -5,7 +5,7 @@ function pinger() {
 		var cmd = $.terminal.parse_command(command);
 		var address = cmd.args[0];
 		
-		if (cmd.name == 'ping' && address != undefined) {
+		if (cmd.name.toUpperCase() == 'PING' && address != undefined) {
 			times = [];
 			loc = address;
 			if(address.substring(0,7) != 'http://' && address.substring(0,8) != 'https://')
@@ -52,7 +52,7 @@ function pinger() {
 				timer = setTimeout(loop, 1000);
             })();
         }
-        else if (cmd.name == 'ping' && address == undefined) {
+        else if (cmd.name.toUpperCase() == 'PING' && address == undefined) {
     		term.echo("ping: no address to ping");
         }
         else if (cmd.name){
@@ -60,7 +60,7 @@ function pinger() {
         }
 	}, 	
 	{
-    greetings: 'Connection to https://www.eagleyuan.com [[;green;]success]\n'+ 'Login time: ' + new Date() + '\n----------------------------\nThe program pings every second\nIf the response time is over 1.5 s, the ping times out\nStart by typing the ping command and the address as the argument \nStop the pinging by hitting CTRL and C at the same time\n----------------------------',
+    greetings: 'Connection to https://www.eagleyuan.com [[;green;]success]\n'+ 'Login time: ' + new Date() + '\n----------------------------\nThe program pings every second\nIf the response time is over 1.5 s, the ping times out\nStart by typing ping and an address as the argument \nStop the pinging by hitting CTRL and C at the same time\n----------------------------',
     width: 600,
     height: 350,
 	prompt: "[[;white;]eagleyuan.com:projects visitor$ ]",
