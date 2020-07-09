@@ -264,7 +264,7 @@ a {
   width: 34px;
   border-radius: 50%;
   border-color: black;
-  border: 2px solid #dfdfdf;
+  border: 2px solid #808080;
   color: #dfdfdf;
   /* replace text with an icon */
   overflow: hidden;
@@ -283,7 +283,7 @@ a {
 .cd-timeline-navigation a.prev::before {
   content:  "\f053";
   font-family: FontAwesome;
-  color: #ccc;
+  color: #808080;
   font-size: 1.4rem;
   display: block;
   position:absolute;
@@ -304,7 +304,7 @@ a {
   top: 6px;
   left: -19px;
   z-index: 10000;
-  color: #ccc;
+  color: #808080;
   height: 100%;
   width: 100%;
   text-align: center;
