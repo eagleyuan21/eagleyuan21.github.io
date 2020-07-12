@@ -303,11 +303,6 @@ function getColor(val)
 	return colcode;
 }
 
-function sleepFor( sleepDuration ){
-    var now = new Date().getTime();
-    while(new Date().getTime() < now + sleepDuration){ /* do nothing */ } 
-}
-
 function shiftLeft()
 {
 	var holder = new Array();
