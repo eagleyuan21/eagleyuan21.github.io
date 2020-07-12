@@ -3,6 +3,9 @@ var sum;
 var high;
 var xi;
 var yi;
+var happened;
+var time;
+var timer;
 
 function startGame() {
 	myGameArea.start();
@@ -15,6 +18,8 @@ function startGame() {
 		high = Number(val);
 	}
 	document.getElementById("highs").innerHTML = "High: " + high.toString();
+	happened = false;
+	time = 0;
 }
 
 var myGameArea = {
@@ -660,6 +665,34 @@ function checkNeighbors(x, y, t)
 	return output;
 }
 
+function check2048(t)
+{
+	for(var i = 0; i < 4; i++)
+	{
+		for (var j = 0; j < 4; j++) { 
+        	if(t[i][j] == 16) 
+        	{
+        		return true;
+    		}
+    	}
+    }
+}
+
+function dispwin()
+{
+	time++;
+	myGameArea.canvas.style.opacity = "0.6";
+	ctx = myGameArea.context;
+	ctx.font = "95px Times New Roman";
+    ctx.fillStyle = "green";
+    ctx.fillText("YOU WIN!", 75, 330);
+    if(time > 1100)
+    {
+    	myGameArea.canvas.style.opacity = "1";
+    	clearInterval(timer);
+    }
+}
+        		
 function updateGame()
 {
 	myGameArea.clear();
@@ -669,5 +702,10 @@ function updateGame()
 	if(checkOver(content))
 	{
 		end();
+	}
+	if(!happened && check2048(content))
+	{
+		happened = true;
+		timer = setInterval(dispwin, 1);
 	}
 }
