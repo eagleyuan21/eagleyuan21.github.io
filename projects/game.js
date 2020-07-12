@@ -670,12 +670,13 @@ function check2048(t)
 	for(var i = 0; i < 4; i++)
 	{
 		for (var j = 0; j < 4; j++) { 
-        	if(t[i][j] == 16) 
+        	if(t[i][j] == 2048) 
         	{
         		return true;
     		}
     	}
     }
+    return false;
 }
 
 function dispwin()
