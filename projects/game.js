@@ -1,11 +1,20 @@
 var content;
 var sum;
-
+var high;
 var xi;
 var yi;
 
 function startGame() {
 	myGameArea.start();
+	if(document.cookie == "")
+	{
+		high = 0;
+	}
+	else{
+		var val = document.cookie.substring(5, document.cookie.length);
+		high = Number(val);
+	}
+	document.getElementById("highs").innerHTML = "High: " + high.toString();
 }
 
 var myGameArea = {
@@ -568,6 +577,10 @@ function checkKey(e) {
 
 function end()
 {
+	if(sum > high)
+	{
+		document.cookie = "high=" + sum.toString();
+	}
 	myGameArea.canvas.style.opacity = "0.5";
 	ctx = myGameArea.context;
 	ctx.font = "95px Times New Roman";
