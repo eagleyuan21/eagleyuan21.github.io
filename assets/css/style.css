@@ -73,7 +73,7 @@ a {
 
 /* Create three equal columns that sits next to each other */
 .column-two {
-  flex: 18%;
+  flex: 30%;
   margin-left: 10%;
 }
 
