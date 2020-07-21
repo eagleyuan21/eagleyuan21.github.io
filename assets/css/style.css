@@ -74,7 +74,7 @@ a {
 /* Create three equal columns that sits next to each other */
 .column-two {
   flex: 18%;
-  margin-left: 14%;
+  margin-left: 13%;
 }
 
 .collapsible {
