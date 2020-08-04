@@ -32,7 +32,7 @@ var myGameArea = {
   		}
 		if(dim > 600)
 		{
-			dim = 550;
+			dim = 600;
 		}
   		this.canvas.style.width  = dim.toString() + "px";
   		this.canvas.style.height = dim.toString() + "px";
