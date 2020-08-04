@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>2048</title>
+    <title>Minesweeper</title>
     <link rel="icon" href="../assets/files/eagle.jpg">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,18 +32,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
 	<script src="../assets/js/blogapi.js"></script>
-	<script src="game.js"></script>
+	<script src="ms.js"></script>
 		<style>
 			canvas {
     			border: 1px solid #d3d3d3;
     			background-color: #f1f1f1;
-			}
-			html, body {
-  				overflow-x: hidden;
-  				overflow-y: hidden;
-			}
-			body {
-  				position: relative;
 			}
 		</style>
   </head>
@@ -75,26 +68,48 @@
 <br>
 <section id="intro" class="bio-section; serif">
       <div class="container">
-          <h1 class="bio-head" style="font-size:28px">EAGLE'S 2048</h1>
+          <br>
+          <h1 class="bio-head" style="font-size:28px">EAGLE'S Minesweeper</h1>
           <p style="font-size:14px">
-          	Blocks past 16384 are white because I doubt anyone can get that high (prove me wrong, <a href="https://www.instagram.com/eagleyuan23/" style="color:#8134AF">send me a screenshot</a>, and I'll add colors).
+            This game includes a few features such as setting the dimensions and total mines. The dimensions are kept between 15 and 35, and the number of mines cannot exceed the total number of cells.
+            There is a timer feature, which turns red when you lose and green when you win. It will start on the click of the first cell. To win, you can either flag every single mine and not flag any other cells, or unhide every non mine cell.
+            Left click is unhiding a cell, and right click is flagging a cell. Use right click to unflag a flagged cell.
           </p>
       </div>
 </section>
     
     <!-- Bio section -->
     <section id="game" class="bio-section;serif">
-      <h1 id="scores" style="font-size:18px;display:inline-block;margin-right:4px;">Score: 0</h1>
-      <h1 id="highs" style="font-size:18px;display:inline-block;margin-right:4px;">High: 0</h1>
-		<button onmousedown="startGame()" type="button" style="padding: 2px 10px; font-size: 12px;">Reset Game</button>
+		<label style="font-size:16px;" for="qdim">Dimensions (between 15 and 35):</label>
+  		<input style="padding: 2px 10px; font-size: 16px;" type="number" id="qdim" name="qdim" min="15" max="35" step="1" value="20">
+		<br>
+		<label style="font-size:16px;" for="qmine">Number of mines (less than total cells):</label>
+  		<input style="padding: 2px 10px; font-size: 16px;" type="number" id="qmine" name="qmine" min="1" max="1000" step="1" value="60">
+		<br>
+    <p id="Uflags" style="font-size:16px;">Used Flags: 0</p>
+    <button onmousedown="reset()" type="button" style="padding: 2px 10px; font-size: 12px;">Reset Game</button>
+    <br><br>
+		<p id="StopWatch" style="font-size:16px;">Time: 0.0 sec</p>
 		<script>
 			startGame();
-			updateGame();
 		</script>
     </section>
-    <br>
+    <br><br>
     <!--/ Bio Section -->
     
+    <!-- Contact Section -->
+    <section id="social" class="contact-section">
+      <div class="container">
+        <h1 class="contact-head">Social Media</h1>
+        <a style="padding-right:7px;color:black;font-size:40px" href="https://www.linkedin.com/in/eagle-yuan-29b953196/"><i class="fa fa-linkedin-square"></i></a>
+        <a style="padding-left:7px;padding-right:7px;color:black;font-size:40px" href="https://www.github.com/eagleyuan21/"><i class="fa fa-github"></i></a>
+        <a style="padding-left:7px;padding-right:7px;color:black;font-size:40px" href="https://www.instagram.com/eagleyuan23/"><i class="fa fa-instagram"></i></a>
+        <a style="padding-left:7px;padding-right:7px;color:black;font-size:40px" href="mailto:eagleyuan21@gmail.com"><i class="fa fa-google"></i></a>
+        <a style="padding-left:7px;color:black;font-size:40px" href="mailto:yuan.e@northeastern.edu"><i class="fa fa-envelope"></i></a>      	
+      </div> 
+    </section>
+    <!--/. Contact Section -->
+
     <!-- Jquery -->
     <script type="text/javascript" src="../assets/js/jquery-2.1.4.js"></script>
     
