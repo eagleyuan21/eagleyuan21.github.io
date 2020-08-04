@@ -24,15 +24,15 @@ var myGameArea = {
   		var dim;
   		if(window.innerWidth > window.innerHeight)
   		{
-  			dim = window.innerHeight - 50;
+  			dim = window.innerHeight - 20;
   		}
   		else if(window.innerWidth <= window.innerHeight)
   		{
-  			dim = window.innerWidth - 50;
+  			dim = window.innerWidth - 20;
   		}
-		if(dim > 600)
+		if(dim > 550)
 		{
-			dim = 600;
+			dim = 550;
 		}
   		this.canvas.style.width  = dim.toString() + "px";
   		this.canvas.style.height = dim.toString() + "px";
@@ -272,7 +272,7 @@ function changeGrid(event) {
 	let x = event.clientX - rect.left; 
 	let y = event.clientY - rect.top; 
 	let side = event.button; //0 if left, 2 if right
-	var space = 600 / d;
+	var space = 550 / d;
 	var i = Math.floor(x / space);
 	var j = Math.floor(y / space);
 
