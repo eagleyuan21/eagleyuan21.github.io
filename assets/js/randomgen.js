@@ -10,7 +10,7 @@ var imgs = ['IMG_4658.jpg', 'IMG_3869.JPG', 'IMG_0080.JPG', 'IMG_5651.jpeg', 'IM
 'IMG_3309.JPG', 'IMG_1391.JPG', 'IMG_7450.JPG', 'IMG_3262.JPG', 'IMG_4363.jpg', 'IMG_2261.JPG', 
 'IMG_0072.JPG', 'IMG_1324.jpg', 'IMG_5137.jpg', 'IMG_0055.JPG', 'IMG_3919.JPG', 'IMG_4408.jpg', 
 'IMG_8255.jpg', 'IMG_4127.jpg', 'IMG_3708.JPG', 'IMG_2801.jpg', 'IMG_4930.jpg', 'IMG_4060.jpg', 
-'IMG_3923.jpg', 'IMG_3085.JPG', 'IMG_1911.JPG'];
+'IMG_3923.jpg', 'IMG_3085.JPG', 'IMG_1911.JPG', 'IMG_5755.jpg'];
 
 var path = "assets/files/slideshow/";
 
