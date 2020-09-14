@@ -92,6 +92,25 @@
     <!-- Proj section -->
     <section id="proj" class="bio-section">
       <div class="container">
+        <h1 class="bio-head">Leveraging a Convolutional Neural Network to Identify Face Coverings to Combat COVID-19</h1>
+          <h1 class="bio-head">
+          	<img src="projects/mask.gif" style="max-width:100%;max-height:100%;width:auto;height:auto">
+          </h1>
+          <p style="font-size:18px;text-align:left">
+          	COVID-19 is one of the biggest global challenges that my generation has seen. At first, I was stunned and shocked. However, I realized that modern problems require modern solutions.
+            Face coverings expecially were something that was utilized to help combat COVID-19. I thought it would be useful to utilize machine learning to help assist with this task. However,
+            I had zero experience with machine learning, let alone computer vision. I began by doing a lot of readings and tutorials on machine learning to gain background knowledge. Afterwards, I followed
+            an already existing face mask neural network found <a href="https://github.com/aieml/face-mask-detection-keras" style="color:blue">here</a>.
+          	<br><br>
+            However, there were a few issues with this convolutional neural network. The primary issue is that the dataset included photoshopped coverings of a disposable surgical mask, which is not realistic at all considering the current types of face coverings.
+            Secondly, the neural network was adjusted to input black and white only, not colors. This made it difficult to identify non light blue colored masks. Finally, a huge issue with wearing a face covering is not wearing it correctly, specifically covering up the nose. 
+            In order to combat these three issues, I made drastic changes such as completely compiling and editing my own dataset with a wide assortment of face coverings, adjusting the neural network to utilize RGB instead of only black and white, and photoshopping and editing data of images that fail to cover the nose 
+            to provide a third classification of wrong mask wearing.
+            <br><br>
+            Currently, the project can only identify mask covering or no mask covering. My complete repository can be found <a href="https://github.com/eagleyuan21/facemask-id" style="color:purple">here</a>. train.py is the file that trains the Convolutional Neural Network (CNN), which currently determines only mask or no mask wearing, and main.py utilizes the model and the .xml file to identify subjects in the camera feed and provide live time feedback. 
+            The model present includes a 100 pixel version. However, it would be recomended to use a 200 px version by changing img_size in train.py to 200. The 200 px version is more accurate as it uses more data points during resizing, whereas the 100 px version would leave out more data. However, the 200 px run time in both train.py and main.py takes significantly longer due to more data, so it is more optimal to use 100 px. To be able to run, make sure all the import python packages are downloaded. The dataset folder has three folders with around 1800 images each of right and no mask wearing and around 100 images of wrong mask wearing. The wrong mask wearing folder contains much less pictures because it is hard to find wrong mask wearing images. Instead, the ps folder contains a set of around 1800 images of no mask wearing along with a folder of mask .png images. The task is to photoshop wrong mask wearing onto these no mask wearing pictures and then add these photoshopped images into the dataset/wrong folder. Once these are completed, the train.py file will be updated to produce 3 output nodes, and the main.py file will also be updated to be able to recognize the 3 output nodes.
+	      </p>
+	      <br><br>
           <h1 class="bio-head">Minesweeper Game</h1>
       	  <h1 class="bio-head">
           	<a href="projects/minesweeper"><img src="projects/playnow.png" style="max-width:150px;max-height:100%;width:auto;height:auto"></a>
@@ -132,7 +151,7 @@
           </p>
 	      <br><br>
       
-          <h1 class="bio-head">An Agent-Based modeling research and study of the foraging behavior of Black Soldier Fly Larvae</h1>
+          <h1 class="bio-head">An Agent-Based Modeling Research and Study of the Foraging Behavior of Black Soldier Fly Larvae</h1>
           <h1 class="bio-head">
           	<img src="projects/combined.gif" style="max-width:100%;max-height:100%;width:auto;height:auto">
           </h1>
