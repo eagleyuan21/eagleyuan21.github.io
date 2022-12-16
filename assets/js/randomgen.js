@@ -1,20 +1,15 @@
-var imgs = ['IMG_4142.jpg', 'IMG_5137.jpg', 'IMG_0213.JPG', 'IMG_7610-min.JPG', 'IMG_4188.jpg', 
-'IMG_5301.JPG', 'IMG_5651.jpeg', 'IMG_3981.jpg', 'IMG_4930.jpg', 'IMG_3262.JPG', 'IMG_6346.JPG', 
-'IMG_8255.jpg', 'IMG_1232.JPG', 'IMG_7404-min.jpg', 'IMG_3707.JPG', 'IMG_5305.JPG', 'IMG_4181.jpg', 
-'IMG_4184.jpg', 'IMG_0098-min.JPG', 'IMG_5330-min.JPEG', 'IMG_7233-min.JPG', 'IMG_6254-min.jpg', 
-'IMG_4527.JPG', 'IMG_6040-min.JPG', 'IMG_7450.JPG', 'IMG_5560.JPG', 'IMG_7909.jpg', 'IMG_6274.jpg', 
-'IMG_6224.JPG', 'IMG_6926-min.jpg', 'IMG_4141.jpg', 'IMG_4292.JPG', 'IMG_4795.jpg', 'IMG_0108-min.JPG', 
-'IMG_6462.jpg', 'IMG_4186.jpg', 'IMG_1017.jpg', 'IMG_4419.JPG', 'IMG_0032.JPG', 'IMG_6573.jpg', 
-'IMG_3387.JPG', 'IMG_0006.JPG', 'IMG_2914.JPG', 'IMG_2641.JPG', 'IMG_4102.JPG', 'IMG_6209.jpg', 
-'IMG_0080.JPG', 'IMG_5347.JPG', 'IMG_6972-min.JPEG', 'IMG_4152.jpg', 'IMG_7357-min.JPG', 'IMG_4408.jpg', 
-'IMG_6395.jpg', 'IMG_0122-min.JPG', 'IMG_1083.jpg', 'IMG_2897-min.JPG', 'IMG_0000-min.JPG', 'IMG_3589.JPG', 
-'IMG_0013-min.JPG', 'IMG_5132.jpg', 'IMG_5842.jpg', 'IMG_3923.jpg', 'IMG_6568.JPG', 'IMG_4061.jpg', 
-'IMG_5755.jpg', 'IMG_0055.JPG', 'IMG_5476.jpg', 'IMG_3444.JPG', 'IMG_4442.jpg', 'IMG_6197.JPEG', 
-'IMG_4472.jpg', 'IMG_7489-min.JPEG', 'IMG_5355.JPG', 'IMG_4060.jpg', 'IMG_4658.jpg', 'IMG_3982.JPG', 
-'IMG_5054.JPG', 'IMG_4155.JPG', 'IMG_4109.jpg', 'IMG_4187.jpg', 'IMG_4127.jpg', 'IMG_3869.JPG', 
-'IMG_0438.jpg', 'IMG_1324.jpg', 'IMG_3919.JPG', 'IMG_4649.jpg', 'IMG_5261.JPG', 'IMG_3299.JPG', 
-'IMG_4118.jpg', 'IMG_4245.JPG', 'IMG_5884.jpg', 'IMG_1053.JPEG', 'IMG_6670.JPG', 'IMG_6563.jpg', 
-'IMG_0072.JPG', 'IMG_4106.JPG', 'IMG_2934.jpg'];
+var imgs = ['IMG_0055.JPG', 'IMG_0108-min.JPG', 'IMG_4408.jpg', 'IMG_1053.JPEG', 'IMG_5355.JPG', 'IMG_5755.jpg', 'IMG_3262.JPG', 
+'IMG_4127.jpg', 'IMG_3589.JPG', 'IMG_5347.JPG', 'IMG_5330-min.JPEG', 'IMG_3869.JPG', 'IMG_2914.JPG', 'IMG_4184.jpg', 'IMG_6926-min.jpg', 
+'IMG_5132.jpg', 'IMG_2934.jpg', 'IMG_8255.jpg', 'IMG_4795.jpg', 'IMG_7610-min.jpg', 'IMG_6197.JPEG', 'IMG_0098-min.JPG', 'IMG_1083.jpg', 
+'IMG_4472.jpg', 'IMG_4142.jpg', 'IMG_7233-min.jpg', 'IMG_6040-min.JPG', 'IMG_4527.JPG', 'IMG_3919.JPG', 'IMG_1017.jpg', 'IMG_4106.JPG', 
+'IMG_6254-min.jpg', 'IMG_5884.jpg', 'IMG_3444.JPG', 'IMG_5261.JPG', 'IMG_4419.JPG', 'IMG_4109.jpg', 'IMG_4181.jpg', 'IMG_3981.jpg', 
+'IMG_4186.jpg', 'IMG_6224.JPG', 'IMG_0013-min.JPG', 'IMG_2897-min.JPG', 'IMG_4060.jpg', 'IMG_4061.jpg', 'IMG_1324.jpg', 'IMG_5054.JPG', 
+'IMG_4292.JPG', 'IMG_7909.jpg', 'IMG_4118.jpg', 'IMG_0072.JPG', 'IMG_0080.JPG', 'IMG_7450.JPG', 'IMG_2641.JPG', 'IMG_6573.jpg', 'IMG_5305.JPG', 
+'IMG_5137.jpg', 'IMG_7404-min.jpg', 'IMG_6274.jpg', 'IMG_6670.JPG', 'IMG_5842.jpg', 'IMG_6568.JPG', 'IMG_4152.jpg', 'IMG_0438.jpg', 'IMG_1232.JPG', 
+'IMG_6395.jpg', 'IMG_4649.jpg', 'IMG_6563.jpg', 'IMG_0032.JPG', 'IMG_6462.jpg', 'IMG_5651.jpeg', 'IMG_0000-min.JPG', 'IMG_7489-min.JPEG', 
+'IMG_4102.JPG', 'IMG_0006.JPG', 'IMG_4141.jpg', 'IMG_3387.JPG', 'IMG_4930.jpg', 'IMG_5301.JPG', 'IMG_4188.jpg', 'IMG_6346.JPG', 'IMG_0213.JPG', 
+'IMG_4187.jpg', 'IMG_6972-min.JPEG', 'IMG_5476.jpg', 'IMG_3299.JPG', 'IMG_4155.JPG', 'IMG_3982.JPG', 'IMG_0122-min.JPG', 'IMG_7357-min.JPG', 
+'IMG_4245.JPG', 'IMG_4658.jpg', 'IMG_4442.jpg', 'IMG_3923.jpg', 'IMG_5560.JPG', 'IMG_6209.jpg', 'IMG_3707.JPG'];
 
 var path = "assets/files/slideshow/";
 
