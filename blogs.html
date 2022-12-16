@@ -82,7 +82,33 @@
     <!-- Bio section -->
     <section id="blogs" class="bio-section">
       <div class="container">
-          <div id="blogspostsdisplay" style="font-family:Times New Roman;"><h1 style="Text-align: Center;Padding:40px">Loading... Please Wait</h1></div>
+          <div id="blogspostsdisplay" style="font-family:Times New Roman;">
+          
+            <button type="button" class="collapsible">
+              <h1 style="font-size:31px;font-weight:500;text-align:left"> Update on the Blog Page </h1>
+              <h2 style="font-size:18px;text-align:left">12/15/2022</h2>
+            </button>
+
+            <div class="content">
+              <h1 style="text-align:center">
+                <img src="assets/files/blogs/salesforce-heroku.png" style="max-width:400px;height:auto;">
+              </h1>
+              <p style="font-size:18px;text-align:left;white-space:pre-wrap">
+                Image from https://www.heroku.com/agencies/opportunities.
+
+
+                If you are a regular reader of my blog, you'll notice all of the old blogs are gone. Unfortunately, this is due to the migration of the previous service I was using. I was using Heroku, which used to offer a free tier service to encourage no cost development. I deployed my blog api using this service, and I was writing and posting my blogs through there.
+                
+                This was obviously a great service, but recently Heroku decided to remove their free tier service, which you can read about here: https://www.techtarget.com/searchsoftwarequality/news/252524336/Heroku-to-end-free-tiers-creating-platform-void-for-devs.
+
+                In the meantime, I'm looking for other free services to deploy my blog api, so for now this blog is hardcoded into the html file (I know not great). Another unfortunate part about this is that my old blogs were deleted, and they are unrecoverable unless I pay for their service.
+
+                However, this isn't the end of the world. Worst comes to worst any time I want to write some thing new, I'll just open the html file and add it back, but it's just a slight inconvenience. My main hope is that there will still be infrastructure out there to encourage the education and development of our young programmers. Without these free services, it becomes difficult to support these young developers, which in my opinion is so important to continuing our responsibility of enabling a future generation of engineers.
+              </p>
+            </div><br>
+          
+          </div>
+
           <script type="text/javascript">
             resizeBack();
     		getObjects();

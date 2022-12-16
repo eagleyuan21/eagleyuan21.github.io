@@ -1,7 +1,23 @@
-var url = "https://blogpostseha.herokuapp.com";
+//var url = "https://blogpostseha.herokuapp.com";
 
 function getObjects()
 {
+
+	var coll = document.getElementsByClassName("collapsible");
+			var i;
+
+			for (i = 0; i < coll.length; i++) {
+  				coll[i].addEventListener("click", function() {
+    				this.classList.toggle("active");
+    				var content = this.nextElementSibling;
+    				if (content.style.maxHeight){
+      					content.style.maxHeight = null;
+    				} else {
+      					content.style.maxHeight = content.scrollHeight + "px";
+    				} 
+  				});
+			}
+	/*
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function() {
   		if (this.readyState == 4 && this.status == 200) {
@@ -27,6 +43,7 @@ function getObjects()
 	
 	xhr.open("GET", url, true);
 	xhr.send();
+	*/
 }
 
 function resizeBack()
