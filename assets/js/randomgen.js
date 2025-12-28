@@ -4,16 +4,16 @@ var imgs = [
 "IMG_1232.JPG", "IMG_1324.jpg", "IMG_2641.JPG", "IMG_2897-min.JPG", "IMG_2934.jpg",
 "IMG_3387.JPG", "IMG_3707.JPG", "IMG_3869.JPG", "IMG_3919.JPG", "IMG_3923.jpg",
 "IMG_3981.jpg", "IMG_3982.JPG", "IMG_4060.jpg", "IMG_4061.jpg", "IMG_4102.JPG",
-"IMG_4109.jpg", "IMG_4118.jpg", "IMG_4127.jpg", "IMG_4141.jpg", "IMG_4142.jpg",
+"IMG_4109.jpg", "IMG_4118.jpg", "IMG_4127.jpg", "IMG_4141.jpg",
 "IMG_4152.jpg", "IMG_4155.JPG", "IMG_4181.jpg", "IMG_4184.jpg", "IMG_4186.jpg",
-"IMG_4187.jpg", "IMG_4188.jpg", "IMG_4245.JPG", "IMG_4292.JPG", "IMG_4408.jpg",
-"IMG_4419.JPG", "IMG_4442.jpg", "IMG_4472.jpg", "IMG_4649.jpg", "IMG_4795.jpg",
+"IMG_4188.jpg", "IMG_4245.JPG", "IMG_4292.JPG", "IMG_4408.jpg",
+"IMG_4419.JPG", "IMG_4472.jpg", "IMG_4649.jpg", "IMG_4795.jpg",
 "IMG_4930.jpg", "IMG_5054.JPG", "IMG_5137.jpg", "IMG_5261.JPG", "IMG_5301.JPG",
 "IMG_5305.JPG", "IMG_5347.JPG", "IMG_5355.JPG", "IMG_5560.JPG", "IMG_5651.jpeg",
 "IMG_5842.jpg", "IMG_6040-min.JPG", "IMG_6197.JPEG", "IMG_6209.jpg", "IMG_6224.JPG",
 "IMG_6254-min.jpg", "IMG_6274.jpg", "IMG_6346.JPG", "IMG_6395.jpg", "IMG_6462.jpg",
 "IMG_6563.jpg", "IMG_6568.JPG", "IMG_6573.jpg", "IMG_6670.JPG", "IMG_6926-min.jpg",
-"IMG_6972-min.JPEG", "IMG_7357-min.JPG", "IMG_7404-min.jpg", "IMG_7450.JPG",
+"IMG_6972-min.JPEG", "IMG_7357-min.JPG", "IMG_7404-min.jpg",
 "IMG_7489-min.JPEG", "IMG_7909.jpg", "IMG_8255.jpg"
 ];
 
